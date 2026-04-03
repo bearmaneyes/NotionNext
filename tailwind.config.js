@@ -31,8 +31,7 @@ module.exports = {
       sans: ['Inter', 'sans-serif'],
       serif: ['"Noto Serif SC"', 'serif'],
     }
-  }
-}
+  }.
       colors: {
         day: {
           DEFAULT: BLOG.BACKGROUND_LIGHT || '#ffffff'

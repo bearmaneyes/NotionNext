@@ -1,11 +1,3 @@
-theme: {
-  extend: {
-    fontFamily: {
-      sans: ['Inter', 'sans-serif'],
-      serif: ['"Noto Serif SC"', 'serif'],
-    }
-  }
-}
 const BLOG = require('./blog.config')
 const { fontFamilies } = require('./lib/utils/font')
 
@@ -35,6 +27,12 @@ module.exports = {
       padding: '16px'
     },
     extend: {
+        fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+      serif: ['"Noto Serif SC"', 'serif'],
+    }
+  }
+}
       colors: {
         day: {
           DEFAULT: BLOG.BACKGROUND_LIGHT || '#ffffff'

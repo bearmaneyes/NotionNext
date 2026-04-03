@@ -1,3 +1,4 @@
+import * as elegance from './elegance'
 import BLOG, { LAYOUT_MAPPINGS } from '@/blog.config'
 import * as ThemeComponents from '@theme-components'
 import getConfig from 'next/config'

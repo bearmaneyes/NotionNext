@@ -1,11 +1,12 @@
-// themes/elegance/index.js
 import CONFIG from './config'
 import LayoutIndex from './LayoutIndex'
 import LayoutSlug from './LayoutSlug'
-// NotionNext 需要的其他基础布局，如果暂时没写，可以先 fallback 到 Index
+// 为了防止报错，把其他必须的 Layout 也导出去，即使它们暂时和首页长一样
 import LayoutSearch from './LayoutIndex' 
 import LayoutArchive from './LayoutIndex'
 import Layout404 from './LayoutIndex'
+import LayoutCategoryIndex from './LayoutIndex'
+import LayoutTagIndex from './LayoutIndex'
 
 export {
   CONFIG,
@@ -13,5 +14,7 @@ export {
   LayoutSearch,
   LayoutArchive,
   LayoutSlug,
-  Layout404
+  Layout404,
+  LayoutCategoryIndex,
+  LayoutTagIndex
 }

@@ -1,3 +1,11 @@
+theme: {
+  extend: {
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+      serif: ['"Noto Serif SC"', 'serif'],
+    }
+  }
+}
 const BLOG = require('./blog.config')
 const { fontFamilies } = require('./lib/utils/font')
 

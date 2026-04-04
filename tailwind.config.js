@@ -27,13 +27,13 @@ module.exports = {
       padding: '16px'
     },
     extend: {
-      // 1. 字体扩展放在 extend 里面
+      // 1. 字体扩展
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         serif: ['"Noto Serif SC"', 'serif'],
-      }, // <--- 注意这里必须是逗号
+      },
       
-      // 2. 颜色扩展也必须在 extend 里面！
+      // 2. 颜色扩展 (把所有的颜色都放在这一个 colors 对象里)
       colors: {
         day: {
           DEFAULT: BLOG.BACKGROUND_LIGHT || '#ffffff'
@@ -48,10 +48,6 @@ module.exports = {
         },
         // black: '#212b36',
         'dark-700': '#090e34b3',
-        // ... 下面保留你原来的其他颜色代码
-      }
-    }
-  },
         dark: {
           DEFAULT: '#111928',
           2: '#1F2A37',
@@ -72,7 +68,9 @@ module.exports = {
         'gray-1': '#F9FAFB',
         'gray-2': '#F3F4F6',
         'gray-7': '#CED4DA'
-      },
+      }, // colors 结束
+
+      // 3. 其他扩展 (maxWidth, boxShadow 等)
       maxWidth: {
         side: '14rem',
         '9/10': '90%',
@@ -89,10 +87,10 @@ module.exports = {
         1: '0px 1px 3px 0px rgba(166, 175, 195, 0.40)',
         2: '0px 5px 12px 0px rgba(0, 0, 0, 0.10)'
       }
-    }
-  },
+    } // extend 结束
+  }, // theme 结束
   variants: {
     extend: {}
   },
   plugins: []
-}
+} // module.exports 结束

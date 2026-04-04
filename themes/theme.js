@@ -13,6 +13,14 @@ export const { THEMES = [] } = getConfig()?.publicRuntimeConfig || {}
  * @param {string} themeQuery - 主题查询参数（支持多个主题用逗号分隔）
  * @returns {Promise<object>} 主题配置对象
  */
+// 在文件顶部引入 (大约在第 15 行附近)
+import * as literary from './literary'
+
+// 找到 export const THEMES = { ... } (大约在第 30 行附近)，添加 literary
+export const THEMES = {
+  // ... 原有的主题
+  literary
+}
 export const getThemeConfig = async themeQuery => {
   // 如果 themeQuery 存在且不等于默认主题，处理多主题情况
   if (typeof themeQuery === 'string' && themeQuery.trim()) {

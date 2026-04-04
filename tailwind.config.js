@@ -27,11 +27,13 @@ module.exports = {
       padding: '16px'
     },
     extend: {
-        fontFamily: {
-      sans: ['Inter', 'sans-serif'],
-      serif: ['"Noto Serif SC"', 'serif'],
-    }
-  }.
+      // 1. 字体扩展放在 extend 里面
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['"Noto Serif SC"', 'serif'],
+      }, // <--- 注意这里必须是逗号
+      
+      // 2. 颜色扩展也必须在 extend 里面！
       colors: {
         day: {
           DEFAULT: BLOG.BACKGROUND_LIGHT || '#ffffff'
@@ -46,6 +48,10 @@ module.exports = {
         },
         // black: '#212b36',
         'dark-700': '#090e34b3',
+        // ... 下面保留你原来的其他颜色代码
+      }
+    }
+  },
         dark: {
           DEFAULT: '#111928',
           2: '#1F2A37',

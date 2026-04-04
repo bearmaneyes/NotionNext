@@ -16,6 +16,9 @@ export default function Header({ siteInfo }) {
       <header className="relative z-10 w-full max-w-6xl mx-auto px-6 h-16 flex items-center justify-between text-white/90">
         <Link href="/">
           <div className="flex items-center gap-3 cursor-pointer group">
+            <div className="w-8 h-8 bg-white/20 backdrop-blur-sm text-white rounded flex items-center justify-center group-hover:bg-white/30 transition-colors font-serif text-sm">
+              拾
+            </div>
             <span className="font-serif text-lg font-medium tracking-wide">
               {siteInfo?.title || '拾光笔记'}
             </span>

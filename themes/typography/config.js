@@ -16,8 +16,14 @@ const CONFIG = {
   TYPOGRAPHY_POST_LIST_SUMMARY: true, // 显示用户自定义摘要，有预览时优先只展示预览
   
   // 菜单配置
-  TYPOGRAPHY_MENU_CATEGORY: true, // 显示分类
-  TYPOGRAPHY_MENU_TAG: true, // 显示标签
-  TYPOGRAPHY_MENU_ARCHIVE: true, // 显示归档
+  TYPOGRAPHY_MENU_CATEGORY: false, // 显示分类
+  TYPOGRAPHY_MENU_TAG: false, // 显示标签
+  TYPOGRAPHY_MENU_ARCHIVE: false, // 显示归档
+
+  TYPOGRAPHY_RIGHT_BAR: true, // 是否显示右侧栏
+  TYPOGRAPHY_RIGHT_LATEST_POSTS: true, // 右侧栏最新文章
+  TYPOGRAPHY_RIGHT_CATEGORY_LIST: true, // 右侧边栏文章分类列表
+  TYPOGRAPHY_RIGHT_TAG_LIST: true, // 右侧边栏标签分类列表
+  
 }
 export default CONFIG

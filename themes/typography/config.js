@@ -12,8 +12,6 @@ const CONFIG = {
 
   TYPOGRAPHY_ARTICLE_RECOMMEND_POSTS: process.env.NEXT_PUBLIC_TYPOGRAPHY_ARTICLE_RECOMMEND_POSTS || true, // 文章详情底部显示推荐
 
-  TYPOGRAPHY_POST_LIST_PREVIEW: || true, // 显示文章预览
-  TYPOGRAPHY_POST_LIST_SUMMARY: || true, // 显示用户自定义摘要，有预览时优先只展示预览
   
   // 菜单配置
   TYPOGRAPHY_MENU_CATEGORY: true, // 显示分类

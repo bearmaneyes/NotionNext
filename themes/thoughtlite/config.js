@@ -18,11 +18,11 @@ const CONFIG = {
   /** 首页（无分类/标签/搜索关键词）使用按日分组时间线 */
   THOUGHTLITE_HOME_TIMELINE: true,
   /** 首页顶部「Latest」摘要卡片（取最新一篇） */
-  THOUGHTLITE_HOME_LATEST_CARD: true,
+  THOUGHTLITE_HOME_LATEST_CARD: false,
   /** 仅文章页显示侧栏（目录、公告等）；列表/归档等不显示 */
   THOUGHTLITE_SIDEBAR_ONLY_ON_POST: true,
 
-  THOUGHTLITE_POST_LIST_COVER: false, // 时间线模式建议关闭封面以保清爽
+  THOUGHTLITE_POST_LIST_COVER: true, // 时间线模式建议关闭封面以保清爽
 
   THOUGHTLITE_TITLE_IMAGE: false, // 标题栏，是否背景图片
   /** 首页隐藏大块 TitleBar，仅保留顶栏 */
